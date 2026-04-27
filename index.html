@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cybersecurity portfolio for Victor Ayenikanju - Web and mobile pentesting, AI DevSecOps, vulnerability research, and security engineering." />
+    <title>Victor Ayenikanju | Cybersecurity Portfolio</title>
+    <script>
+      window.addEventListener('error', function (event) {
+        var root = document.getElementById('root');
+        if (!root) return;
+        root.innerHTML = '<div style="min-height:100vh;background:#0d0d0d;color:#e2e8f0;font-family:monospace;padding:32px"><h1 style="color:#00ff88">Portfolio failed to load</h1><p>A JavaScript error occurred before React could render.</p><pre style="white-space:pre-wrap;border:1px solid rgba(0,255,136,.3);padding:16px;border-radius:12px;background:#050505">' + String(event.message || 'Unknown error') + '</pre><p>Run npm install again, then npm run dev. If this shows, copy this message.</p></div>';
+      });
+      window.addEventListener('unhandledrejection', function (event) {
+        var root = document.getElementById('root');
+        if (!root) return;
+        root.innerHTML = '<div style="min-height:100vh;background:#0d0d0d;color:#e2e8f0;font-family:monospace;padding:32px"><h1 style="color:#00ff88">Portfolio failed to load</h1><p>An async JavaScript error occurred.</p><pre style="white-space:pre-wrap;border:1px solid rgba(0,255,136,.3);padding:16px;border-radius:12px;background:#050505">' + String(event.reason || 'Unknown error') + '</pre></div>';
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div style="min-height:100vh;background:#0d0d0d;color:#00ff88;font-family:monospace;display:grid;place-items:center">
+        $ initializing security profile...
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
